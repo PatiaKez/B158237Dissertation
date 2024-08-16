@@ -1,0 +1,17 @@
+﻿Light,Temperature,Dark_duration,perc_dead,latitude
+Dark,1C,0,7,66
+Dark,1C,7,9,67.4
+Dark,1C,14,11,68.2
+Dark,1C,21,14,69.1
+Dark,1C,28,17,70
+Dark,1C,35,20.5,71
+Dark,1C,42,25,72.1
+Dark,1C,49,30,73.2
+Dark,4C,0,9,66
+Dark,4C,7,11,67.4
+Dark,4C,14,14,68.2
+Dark,4C,21,17.5,69.1
+Dark,4C,28,22,70
+Dark,4C,35,26.5,71
+Dark,4C,42,32,72.1
+Dark,4C,49,38,73.2
