@@ -106,7 +106,6 @@ plot_temp_05 <- ggplot() +
   geom_point(data = summary_temp_05, aes(x = day, y = mean_prop_dead, color = strain, shape = treatment), size = 4, stroke = 1.5) +
   geom_errorbar(data = summary_temp_05, aes(x = day, ymin = mean_prop_dead - se_prop_dead, ymax = mean_prop_dead + se_prop_dead), width = 0.3) +
   labs(
-    title = "Proportion of Dead Cells at 1C Temperature",
     x = "Day",
     y = "Proportion Dead",
     color = "Strain",
@@ -116,11 +115,10 @@ plot_temp_05 <- ggplot() +
   scale_color_manual(values = colorblind_palette) +
   theme_minimal() +
   theme(
-    legend.title = element_text(size = 12),
-    legend.text = element_text(size = 10),
-    plot.title = element_text(size = 16, face = "bold"),
-    axis.title = element_text(size = 14),
-    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 13),
+    legend.text = element_text(size = 13),
+    axis.title = element_text(size = 15),
+    axis.text = element_text(size = 15),
     panel.grid.major = element_line(color = "gray90"),
     panel.grid.minor = element_line(color = "gray95")
   )
@@ -134,7 +132,6 @@ plot_temp_4 <- ggplot() +
   geom_point(data = summary_temp_4, aes(x = day, y = mean_prop_dead, color = strain, shape = treatment), size = 4, stroke = 1.5) +
   geom_errorbar(data = summary_temp_4, aes(x = day, ymin = mean_prop_dead - se_prop_dead, ymax = mean_prop_dead + se_prop_dead), width = 0.3) +
   labs(
-    title = "Proportion of Dead Cells at 4C Temperature",
     x = "Day",
     y = "Proportion Dead",
     color = "Strain",
@@ -144,13 +141,12 @@ plot_temp_4 <- ggplot() +
   scale_color_manual(values = colorblind_palette) +
   theme_minimal() +
   theme(
-    legend.title = element_text(size = 12),
-    legend.text = element_text(size = 10),
-    plot.title = element_text(size = 16, face = "bold"),
-    axis.title = element_text(size = 14),
-    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 13),
+    legend.text = element_text(size = 13),
+    axis.title = element_text(size = 15),
+    axis.text = element_text(size = 15),
     panel.grid.major = element_line(color = "gray90"),
-    panel.grid.minor = element_line(color = "gray95")
+    panel.grid.minor = element_line(color = "gray95") 
   )
 
 # Combine plots into one display

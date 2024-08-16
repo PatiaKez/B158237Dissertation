@@ -18,7 +18,7 @@ library(dplyr)
 library(tidyverse)
 
 #loading in the data, that might be useful
-EBData <- read.csv("C:/Users/User/Documents/Edi Masters/Master's Research Project/MScDiatomRCode/EBData.csv", header = TRUE)
+EBData <- read.csv("C:/Users/User/Documents/Edi Masters/Master's Research Project/B158237Dissertation/EBData.csv", header = TRUE)
 
 names(EBData)[1] <- "ID"
 

@@ -55,7 +55,6 @@ create_plot <- function(summary_data, predictions, temperature, title) {
     geom_point(data = summary_filtered, aes(x = day, y = mean_growth_rate, color = strain, shape = treatment), size = 4, stroke = 1.5) +
     geom_errorbar(data = summary_filtered, aes(x = day, ymin = mean_growth_rate - se_growth_rate, ymax = mean_growth_rate + se_growth_rate), width = 0.3) +
     labs(
-      title = title,
       x = "Day",
       y = "Growth Rate",
       color = "Strain",
@@ -64,11 +63,10 @@ create_plot <- function(summary_data, predictions, temperature, title) {
     )+ scale_color_manual(values = colorblind_palette) +
     theme_minimal() +
     theme(
-      legend.title = element_text(size = 12),
-      legend.text = element_text(size = 10),
-      plot.title = element_text(size = 16, face = "bold"),
-      axis.title = element_text(size = 14),
-      axis.text = element_text(size = 12),
+      legend.title = element_text(size = 13),
+      legend.text = element_text(size = 13),
+      axis.title = element_text(size = 15),
+      axis.text = element_text(size = 15),
       panel.grid.major = element_line(color = "gray90"),
       panel.grid.minor = element_line(color = "gray95")
     )
@@ -79,4 +77,5 @@ plot_temp_05 <- create_plot(summary_data, predictions, 0.5, "Growth Rate at 1C T
 plot_temp_4 <- create_plot(summary_data, predictions, 4, "Growth Rate at 4C Temperature")
 
 # Combine plots into one display
-grid.arrange(plot_temp_05, plot_temp_4, ncol = 2)
+grid.arrange(plot_temp_05, plot_temp_4, ncol = 2, nrow = 1)
+

@@ -9,7 +9,7 @@ library(dplyr)
 library(tidyverse)
 
 #loading in the data, that might be useful
-GRData <- read.csv("C:/Users/User/Documents/Edi Masters/Master's Research Project/MScDiatomRCode/GRData.csv", header = TRUE)
+GRData <- read.csv("C:/Users/User/Documents/Edi Masters/Master's Research Project/B158237Dissertation/GRData.csv", header = TRUE)
 
 names(GRData)[1] <- "ID"
 
